@@ -7,7 +7,7 @@
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
- 
+
     <style>
         /* --- CONFIGURACIÓN DE LIENZO INMUTABLE --- */
         * {
@@ -15,7 +15,7 @@
             padding: 0;
             box-sizing: border-box;
         }
- 
+
         body { 
             background-color: #eaeaea; 
             font-family: 'Montserrat', sans-serif; 
@@ -25,7 +25,7 @@
             justify-content: center;
             align-items: flex-start;
         }
- 
+
         h1, h2, h3 { font-family: 'Playfair Display', serif; color: #c49a45; margin: 0; font-weight: normal; }
         
         /* Contenedor tipo "App de Celular" */
@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
         }
- 
+
         /* Proporción vertical exacta 9:16 */
         .hoja-pagina {
             background-color: #ffffff;
@@ -53,7 +53,7 @@
         .hoja-pagina:last-child {
             margin-bottom: 0;
         }
- 
+
         /* --- SECCIÓN 0: HOJA INICIAL --- */
         .seccion-bienvenida {
             background-image: url('1.png');
@@ -73,12 +73,12 @@
             opacity: 0; 
             animation: deslizarHaciaArriba 1.8s ease-out 0.5s forwards;
         }
- 
+
         @keyframes deslizarHaciaArriba {
             0% { opacity: 0; transform: translateY(40px); }
             100% { opacity: 1; transform: translateY(0); }
         }
- 
+
         /* --- SECCIÓN 1: NUESTRA BODA --- */
         .seccion-nuestra-boda {
             background-image: url('2.png'); 
@@ -90,13 +90,13 @@
             align-items: center;
             padding: 10%;
         }
- 
+
         .imagen-texto-boda {
             width: 80%; 
             height: auto;
             display: block;
         }
- 
+
         /* --- SECCIÓN COMBINADA: PASES Y CONTADOR --- */
         .seccion-pases-contador {
             background-image: url('5.1.png');
@@ -110,7 +110,7 @@
             padding: 10% 6%;
             text-align: center;
         }
- 
+
         .titulo-seccion-cursiva { 
             font-family: 'Playfair Display', serif; 
             font-size: 34px; 
@@ -119,7 +119,7 @@
             margin-bottom: 5px; 
             line-height: 1.1;
         }
- 
+
         .texto-invitacion-elegante {
             font-family: 'Playfair Display', serif;
             font-style: italic;
@@ -128,12 +128,12 @@
             line-height: 1.4;
             margin-bottom: 10px;
         }
- 
+
         .caja-invitado-oscura {
             padding: 5px 10px;
             width: 100%;
         }
- 
+
         .caja-invitado-oscura p {
             margin: 4px 0;
             font-size: 11px;
@@ -141,33 +141,33 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
- 
+
         .nombre-familia {
             font-size: 24px;
             color: #c49a45;
             margin: 5px 0;
             font-style: italic;
         }
- 
+
         .numero-pases-elegante {
             font-size: 32px;
             color: #ffffff;
             font-family: 'Playfair Display', serif;
             font-style: italic;
         }
- 
+
         .contenedor-tiempo {
             display: flex;
             justify-content: center;
             gap: 12px;
             margin-top: 5px;
         }
- 
+
         .bloque-tiempo {
             text-align: center;
             width: 60px;
         }
- 
+
         .numero-tiempo-dorado {
             font-size: 28px;
             font-family: 'Playfair Display', serif;
@@ -178,13 +178,13 @@
             padding-bottom: 3px;
             margin-bottom: 3px;
         }
- 
+
         .etiqueta-tiempo-blanca {
             font-size: 10px;
             text-transform: uppercase;
             color: #e0e0e0;
         }
- 
+
         /* --- SECCIÓN 2: LA FECHA (PÁGINA TRES) --- */
         .seccion-fecha {
             background-image: url('3.png');
@@ -196,14 +196,14 @@
             align-items: center;
             padding: 0; 
         }
- 
+
         .imagen-fecha { 
             width: 72%; 
             height: auto; 
             display: block; 
             margin: 0 auto; 
         }
- 
+
         /* --- SECCIÓN 3: HOJA 4 (MODO GHIBLI) --- */
         .seccion-cuatro {
             background-image: url('4.png');
@@ -216,7 +216,7 @@
             align-items: center;
             padding: 0%;   
         }
- 
+
         .imagen-texto-derecha { 
             width: 54%; 
             height: auto; 
@@ -233,7 +233,7 @@
             margin-top: -6%; 
             margin-bottom: 0%; 
         }
- 
+
         /* --- SECCIÓN 5: CEREMONIA Y RECEPCIÓN --- */
         .seccion-cinco {
             background-image: url('5.1.png');
@@ -245,16 +245,16 @@
             align-items: center;
             padding: 6%;
         }
- 
+
         .contenedor-texto-cinco {
             width: 90%;
             display: flex;
             justify-content: center;
             margin-top: -15%;
         }
- 
+
         .imagen-texto-cinco { width: 100%; height: auto; display: block; }
- 
+
         /* --- SECCIÓN 7: ITINERARIO --- */
         .seccion-itinerario { 
             padding: 10% 6%; 
@@ -292,7 +292,7 @@
             position: absolute; 
             top: 50%; 
             left: 50%;
-            transform: translate(-50%, -50%) !important; /* Forza el centrado absoluto sobre la línea ignorando efectos 3D secundarios */
+            transform: translate(-50%, -50%) !important; 
             background-color: #ffffff; 
             color: #c49a45; 
             font-size: 12px; 
@@ -301,23 +301,23 @@
             line-height: 20px; 
             border-radius: 50%; 
             border: 2px solid #c49a45; 
-            z-index: 3; /* Incrementado para evitar superposiciones */
+            z-index: 3; 
             text-align: center; 
             transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease; 
         }
         .corazon.activo {
             background-color: #c49a45;
             color: #ffffff;
-            transform: translate(-50%, -50%) scale(1) !important; /* Mantiene el centrado milimétrico al activarse */
+            transform: translate(-50%, -50%) scale(1) !important; 
         }
- 
+
         .info-evento { width: 40%; position: relative; }
         .evento:nth-child(odd) .info-evento { float: left; text-align: right; padding-right: 5px; }
         .evento:nth-child(even) .info-evento { float: right; text-align: left; padding-left: 5px; }
         
         .titulo-evento { font-family: 'Playfair Display', serif; font-size: 14px; color: #c49a45; margin: 0; font-style: italic; line-height: 1.1; }
         .hora-evento { font-family: 'Playfair Display', serif; font-size: 13px; color: #c49a45; font-weight: normal; font-style: italic; margin-top: 2px; }
- 
+
         /* --- SECCIÓN 8: VESTIMENTA --- */
         .seccion-vestimenta-nueva {
             background-image: url('7.png');
@@ -328,18 +328,18 @@
             justify-content: center;
             align-items: center;
         }
- 
+
         .contenedor-vestimenta-txt {
             position: relative;
             width: 85%;
         }
- 
+
         .imagen-texto-vestimenta {
             width: 100%;
             height: auto;
             display: block;
         }
- 
+
         .gif-hombres {
             position: absolute;
             top: 26%; 
@@ -349,7 +349,7 @@
             height: auto;
             z-index: 2;
         }
- 
+
         .gif-mujeres {
             position: absolute;
             top: 53.5%; 
@@ -359,7 +359,7 @@
             height: auto;
             z-index: 2;
         }
- 
+
         /* --- SECCIÓN 9: HOJA FINAL Y ASISTENCIA --- */
         .seccion-nueve {
             background-image: url('9.png');
@@ -372,7 +372,7 @@
             align-items: center;
             padding: 8% 5%;
         }
- 
+
         .imagen-texto-nueve {
             width: 85%;
             height: auto;
@@ -380,7 +380,7 @@
             margin-bottom: 2%; 
             z-index: 2;
         }
- 
+
         .btn-confirmar { 
             display: inline-block; 
             padding: 14px 35px; 
@@ -406,17 +406,17 @@
     </style>
 </head>
 <body>
- 
+
     <div class="contenedor-principal">
         
         <div class="seccion-bienvenida hoja-pagina">
             <img src="1 TXT.png" alt="Hay momentos en la vida..." class="imagen-frase">
         </div>
- 
+
         <div class="seccion-nuestra-boda hoja-pagina">
             <img src="2 TXT.png" alt="Con mucha alegría ¡Nos casamos! Carolina & Wilson" class="imagen-texto-boda" data-aos="zoom-in" data-aos-duration="1400">
         </div>
- 
+
         <div class="seccion-pases-contador hoja-pagina">
             <div style="width: 100%;">
                 <h2 class="titulo-seccion-cursiva" data-aos="fade-up">Pases</h2>
@@ -432,7 +432,7 @@
                     <h3 id="numero-pases" class="numero-pases-elegante">0</h3>
                 </div>
             </div>
- 
+
             <div style="width: 100%;">
                 <h2 class="titulo-seccion-cursiva" data-aos="fade-up">Cuenta regresiva</h2>
                 <div class="contenedor-tiempo">
@@ -451,111 +451,111 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="seccion-fecha hoja-pagina">
             <img src="3txtcc.png" alt="Fecha de la boda" class="imagen-fecha" data-aos="fade-up" data-aos-duration="1500">
         </div>
- 
+
         <div class="seccion-cuatro hoja-pagina">
             <img src="4 txt.png" alt="Cada momento nos trajo hasta aqui" class="imagen-texto-derecha" data-aos="fade-in" data-aos-duration="1500">
             <img src="4 fotos.png" alt="Fotografías en la playa" class="imagen-fotos-abajo" data-aos="fade-up" data-aos-duration="1500">
         </div>
- 
+
         <div class="seccion-cinco hoja-pagina">
             <div class="contenedor-texto-cinco" data-aos="zoom-in" data-aos-duration="1500">
                 <img src="5 txt.png" alt="Detalles de Ceremonia y Recepción" class="imagen-texto-cinco">
             </div>
         </div>
- 
+
         <div class="seccion-itinerario hoja-pagina">
             <h2 class="titulo-seccion" data-aos="fade-up">Itinerario</h2>
             
             <div class="linea-tiempo" id="contenedor-linea">
                 <div class="linea-fondo"></div>
                 <div class="linea-relleno" id="linea-progreso"></div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Ceremonia</p>
                         <h3 class="hora-evento">5:00 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Recepción</p>
                         <h3 class="hora-evento">7:30 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Entrada de los novios</p>
                         <h3 class="hora-evento">8:00 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Brindis</p>
                         <h3 class="hora-evento">8:30 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Cena</p>
                         <h3 class="hora-evento">9:00 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Pastel</p>
                         <h3 class="hora-evento">9:30 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Palabras de familiares</p>
                         <h3 class="hora-evento">10:00 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Baile de novios</p>
                         <h3 class="hora-evento">10:30 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Rifa del Ramo</p>
                         <h3 class="hora-evento">11:00 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Inicio de Fiesta</p>
                         <h3 class="hora-evento">11:30 p.m.</h3>
                     </div>
                 </div>
- 
+
                 <div class="evento">
-                    <div class="corazon" data-aos="zoom-in">♥</div>
+                    <div class="corazon" data-aos="zoom-in">&#9829;&#xFE0E;</div>
                     <div class="info-evento">
                         <p class="titulo-evento">Fin</p>
                         <h3 class="hora-evento">2:30 a.m.</h3>
@@ -563,7 +563,7 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="seccion-vestimenta-nueva hoja-pagina">
             <div class="contenedor-vestimenta-txt" data-aos="zoom-in" data-aos-duration="1500">
                 <img src="7 txt sin iconos.png" alt="Código de Vestimenta" class="imagen-texto-vestimenta">
@@ -571,22 +571,22 @@
                 <img src="mujer.gif" alt="Icono Mujeres" class="gif-mujeres">
             </div>
         </div>
- 
+
         <div class="seccion-nueve hoja-pagina" data-aos="fade-in">
             <img src="9 txt.png" alt="Información Final" class="imagen-texto-nueve" data-aos="zoom-in" data-aos-duration="1500">
             <a href="https://wa.me/573104092518?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Carolina%20y%20Wilson." class="btn-confirmar" target="_blank" data-aos="fade-up" data-aos-delay="200">Confirmar Asistencia</a>
         </div>
- 
+
     </div>
- 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ once: false });
- 
+
         const parametros = new URLSearchParams(window.location.search);
         document.getElementById('nombre-familia').innerText = parametros.get('familia') || 'Familia e Invitados';
         document.getElementById('numero-pases').innerText = parametros.get('pases') || 'Personales';
- 
+
         const fechaBoda = new Date("Jul 18, 2026 17:00:00").getTime();
         setInterval(function() {
             const ahora = new Date().getTime();
@@ -603,7 +603,7 @@
             document.getElementById("mins").innerHTML = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
             document.getElementById("segs").innerHTML = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
         }, 1000);
- 
+
         window.addEventListener('scroll', function() {
             const contenedorLinea = document.getElementById('contenedor-linea');
             const lineaProgreso = document.getElementById('linea-progreso');
@@ -616,7 +616,7 @@
                 if (porcentaje > 100) porcentaje = 100;
                 lineaProgreso.style.height = porcentaje + '%';
             }
- 
+
             const eventos = document.querySelectorAll('.evento');
             eventos.forEach(evento => {
                 const corazon = evento.querySelector('.corazon');
